@@ -46,5 +46,5 @@ while True:
     elif ch==4:
         Div()
     else:
-        print("Invalid input")
+        print("This is an Invalid input")
         quit()
