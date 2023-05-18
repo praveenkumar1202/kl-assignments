@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-
-client = MongoClient("mongodb://intern_23:intern%40123@192.168.0.220:2717/interns_b2_23")
-db = client.interns_b2_23
-Collection = db.praveen_kumar
+from scripts.constants.app_constant import DataBase
+client = MongoClient(DataBase.data_uri)
+db = client[DataBase.data_name]
+Collection = db[DataBase.data_collection]
